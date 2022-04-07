@@ -1,0 +1,94 @@
+:root {
+	--darkblue: #313f5c;
+	--orange: #dc5526;
+}
+
+.home {
+	margin-left: 50px;
+	background-color: #fff;
+}
+
+.pack {
+	margin-left: 50px;
+	padding: 20px;
+	height: 100vh;
+}
+
+.packWrapper {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.pack a.back {
+	height: 10vh;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.pack .back p {
+	font-size: 2rem;
+	color: #000;
+	width: auto;
+	border-bottom: 4px solid var(--darkblue);
+	transition: all 0.5s ease-in;
+}
+
+.pack .back p:hover {
+	transition: all 0.5s ease-in;
+	color: var(--darkblue);
+	font-weight: 800;
+	border-bottom: 4px solid var(--orange);
+}
+
+.row {
+	width: 100%;
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.row .col-2 {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 10px;
+	padding-bottom: 15vh;
+}
+.pack ul {
+	height: 40vh;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	flex-direction: column;
+}
+.pack ul > li {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	list-style: none;
+	padding: 0 10px;
+}
+.pack ul > li h1 {
+	font-size: 3.5rem;
+	font-weight: 800;
+}
+
+.pack ul > li p {
+	font-size: 2.5rem;
+}
+.pack h1 a {
+	color: orange;
+}

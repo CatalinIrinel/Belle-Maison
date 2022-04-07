@@ -1,0 +1,30 @@
+:root {
+  --darkblue: #000;
+  --orange: #dc5526;
+}
+
+@media screen and (max-width: 768px) {
+  .slick-prev:before,
+  .slick-next:before {
+    color: var(--darkblue);
+    font-size: 8rem;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .slick-prev:before,
+  .slick-next:before {
+    color: var(--darkblue);
+    font-size: 5rem;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--darkblue);
+  font-size: 5rem;
+}
+
+.slick-prev {
+  left: -6%;
+}
