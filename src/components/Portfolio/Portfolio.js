@@ -2,10 +2,13 @@ import React from 'react';
 import './Portfolio.css';
 import {
   ImageWrapper,
+  MenuItem,
+  MenuItems,
   PortfolioContainer,
   SlideCard,
   SlideImage,
   SliderWrapper,
+  SubMenu,
   Title,
   TitleContainer,
 } from './PortfolioElements';
@@ -57,7 +60,14 @@ function Portfolio() {
         <TitleContainer>
           <Title>Portofoliul Nostru</Title>
         </TitleContainer>
-
+        <SubMenu>
+          <MenuItems>
+            <MenuItem className="item active">Baie</MenuItem>
+            <MenuItem className="item">Dormitor</MenuItem>
+            <MenuItem className="item">Living</MenuItem>
+            <MenuItem className="item">Terasa</MenuItem>
+          </MenuItems>
+        </SubMenu>
         <SliderWrapper>
           <Slider {...settings}>
             {ImageData.images.map((img, index) => {

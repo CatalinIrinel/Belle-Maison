@@ -1,8 +1,8 @@
 import styled from 'styled-components/macro';
 
 const mainColor = '#000';
-// const goldGradient = 'linear-gradient(45deg,#f9f295,#e0AA3e,#f9f295,#b88a44)';
-const goldColor = '#ffe44d';
+const goldGradient = 'linear-gradient(45deg,#f9f295,#e0AA3e,#f9f295,#b88a44)';
+// const goldColor = '#ffe44d';
 // const orange = '#dc5526';
 
 export const AboutContainer = styled.div`
@@ -71,7 +71,9 @@ export const TitleContainer = styled.div`
 export const Title = styled.h1`
   width: 100%;
   font-size: 4rem;
-  color: ${goldColor};
+  background: ${goldGradient};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   @media screen and (max-width: 575.98px) {
     font-size: 3rem;
     padding-top: 25px;

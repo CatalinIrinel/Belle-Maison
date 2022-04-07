@@ -1,11 +1,11 @@
 import styled from 'styled-components/macro';
 
 const mainColor = '#000';
-const goldGradient = 'linear-gradient(45deg,#f9f295,#e0AA3e,#f9f295,#b88a44)';
+// const goldGradient = 'linear-gradient(45deg,#f9f295,#e0AA3e,#f9f295,#b88a44)';
 const goldColor = '#ffe44d';
 
 export const PortfolioContainer = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -46,6 +46,36 @@ export const TitleContainer = styled.div`
 
 export const Title = styled.h1`
   color: ${mainColor};
+`;
+
+export const SubMenu = styled.div`
+  width: 100%;
+  min-height: 90px;
+  margin: 1.5rem 0;
+`;
+
+export const MenuItems = styled.ul`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+`;
+
+export const MenuItem = styled.li`
+  color: #000;
+  padding: 5px 20px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &.active {
+    text-decoration: none;
+    border-bottom: 3px solid #000;
+  }
 `;
 
 export const SliderWrapper = styled.div`

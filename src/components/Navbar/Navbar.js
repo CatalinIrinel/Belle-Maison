@@ -92,7 +92,8 @@ function Navbar() {
           <Copyrights toggle={toggle}>
             <p>
               <img src={logoIcon} alt="Lighthouse Design Studio" />
-              <FaIcons.FaRegCopyright /> {new Date().getFullYear()}
+              <FaIcons.FaRegCopyright className="copyrights" />{' '}
+              {new Date().getFullYear()}
             </p>
             <br /> <p>All rights reserved</p>
           </Copyrights>

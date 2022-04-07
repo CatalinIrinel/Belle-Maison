@@ -52,7 +52,9 @@ export const NavItem = styled.li`
 
 export const Copyrights = styled.li`
   display: ${({ toggle }) => (toggle ? 'flex' : 'none')};
-  color: ${goldColor};
+  background: ${goldGradient};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   width: 100%;
   height: auto;
   flex-direction: column;
@@ -60,6 +62,10 @@ export const Copyrights = styled.li`
   justify-content: center;
   text-align: center;
   font-size: 15px;
+
+  .copyrights {
+    color: ${goldColor};
+  }
   p {
     width: 170px;
     overflow: hidden;
@@ -84,13 +90,16 @@ export const Socialmedia = styled.li`
   width: 100%;
   height: 40px;
   font-size: 30px;
-  color: ${goldColor};
+  background: ${goldGradient};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: ${({ toggle }) => (toggle ? 'flex' : 'none')};
   align-items: ${({ toggle }) => (toggle ? 'center' : '')};
   justify-content: ${({ toggle }) => (toggle ? 'space-evenly' : '')};
 
   .icon {
     cursor: pointer;
+    color: ${goldColor};
   }
 `;
 
@@ -138,8 +147,14 @@ export const NavText = styled.span`
   height: 60px;
   line-height: 60px;
   white-space: normal;
+  background: ${goldGradient};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   &.active {
+    background: none;
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: initial;
     color: ${mainColor};
   }
 `;

@@ -50,7 +50,13 @@ html {
 .container {
   max-width: 1200px;
   width: 800px;
-  background-color: #313f5c;
+  /* glass morph */
+  background: rgba(0, 0, 0, 0.56);
+  border-radius: 16px;
+  backdrop-filter: blur(7.1px);
+  -webkit-backdrop-filter: blur(7.1px);
+  border: 1px solid #f9f295;
+  /* end of glass */
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -61,7 +67,7 @@ html {
 }
 .container hr {
   border: none;
-  border: 2px dashed #dc5526;
+  border: 2px dashed #f9f295;
   width: 100%;
   height: 2px;
 }
@@ -90,7 +96,7 @@ html {
   font-size: 20px;
 }
 .container .price strong {
-  color: #dc5526;
+  color: #f9f295;
   font-size: 25px;
 }
 @media screen and (max-width: 576.98px) {

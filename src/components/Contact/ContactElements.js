@@ -1,12 +1,17 @@
 import styled from 'styled-components/macro';
 
-const orange = '#dc5526';
-const darkblue = '#313f5c';
+const mainColor = '#000';
+const goldGradient = 'linear-gradient(45deg,#f9f295,#e0AA3e,#f9f295,#b88a44)';
+const goldColor = '#ffe44d';
 
 export const ContactContainer = styled.div`
   width: 100%;
   padding: 5% 10%;
-  background-color: #11192a;
+  background: linear-gradient(
+    130deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(221, 196, 188, 0.8)
+  );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,7 +26,7 @@ export const ContactTitle = styled.div`
 
 export const Title = styled.h1`
   font-size: 4rem;
-  color: #fff;
+  color: ${mainColor};
   @media screen and (max-width: 576.98px) {
     font-size: 2.8rem;
     line-height: 4.5rem;
@@ -29,7 +34,10 @@ export const Title = styled.h1`
 `;
 
 export const TitleColor = styled.span`
-  color: ${orange};
+  background: ${goldGradient};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.3px #000;
 `;
 
 export const ContactWrapper = styled.div`
@@ -54,7 +62,7 @@ export const FormLabel = styled.label`
   font-size: 20px;
   text-transform: uppercase;
   text-align: right;
-  color: #fff;
+  color: #000;
   margin-top: 20px;
 `;
 
@@ -62,7 +70,7 @@ export const FormInput = styled.input`
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */
   border: none;
-  border-bottom: 3px solid #fff; /* Gray border */
+  border-bottom: 3px solid #000; /* Gray border */
   background: transparent;
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
@@ -74,7 +82,7 @@ export const FormTextArea = styled.textarea`
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */
   border: none;
-  border-bottom: 3px solid #fff; /* Gray border */
+  border-bottom: 3px solid #000; /* Gray border */
   background: transparent;
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
@@ -89,22 +97,23 @@ export const FormButtonArea = styled.div`
   margin-top: 5%;
 `;
 export const FromButton = styled.button`
-  width: 40%;
+  cursor: pointer;
+  width: fit-content;
   font-size: 2.5rem;
   font-weight: bold;
   letter-spacing: 2px;
   padding: 20px 40px;
-  border: 3px solid #fff;
-  color: ${darkblue};
+  border: 3px solid ${mainColor};
+  color: ${goldColor};
   border-radius: 10px;
   text-transform: uppercase;
   transition: all 0.6s ease-out;
-    background-color: #fff;
+  background-color: ${mainColor};
 
   &:hover {
-    border: 3px solid #fff;
+    border: 3px solid ${mainColor};
     background-color: transparent;
-    color: ${orange};
+    color: ${mainColor};
   }
 
   @media screen and (max-width: 576.98px) {
