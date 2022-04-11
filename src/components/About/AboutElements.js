@@ -7,36 +7,42 @@ const goldGradient = 'linear-gradient(45deg,#f9f295,#e0AA3e,#f9f295,#b88a44)';
 
 export const AboutContainer = styled.div`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: ${mainColor};
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @media screen and (max-width: 768px) {
     padding: 10% 0;
     height: auto;
   }
   @media screen and (max-width: 575.98px) {
     padding: 0;
-    height: auto;
+    min-height: 100vh;
   }
 `;
 
 export const AboutWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 100%;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1400px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 24px;
+  padding: 20px 24px;
   justify-content: center;
+  align-items: center;
 
   @media screen and (max-width: 768px) {
-    height: auto;
+    min-height: 100%;
   }
 `;
 
 export const AboutRow = styled.div`
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
@@ -53,6 +59,9 @@ export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
+  @media screen and (max-width: 575.98px) {
+    margin-bottom: 3rem;
+  }
 `;
 
 export const Column2 = styled.div`
@@ -63,7 +72,7 @@ export const Column2 = styled.div`
 
 export const TitleContainer = styled.div`
   width: 100%;
-  max-width: 540px;
+  max-width: 590px;
   padding-top: 0;
   padding-bottom: 60px;
 `;
@@ -83,7 +92,6 @@ export const Title = styled.h1`
 export const TextContainer = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
 `;
 
 export const Text = styled.p`

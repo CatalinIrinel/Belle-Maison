@@ -17,6 +17,22 @@
     color: #000;
     font-size: 5rem;
   }
+  .slick-slider {
+    height: 350px;
+  }
+  .slick-dots {
+    width: 330px;
+    bottom: -30px;
+    right: 22px;
+  }
+}
+
+@media screen and (max-width: 390.98px) {
+  .slick-dots {
+    width: 330px;
+    bottom: -30px;
+    right: 10px;
+  }
 }
 
 .slick-prev:before,
@@ -26,5 +42,15 @@
 }
 
 .slick-prev {
-  left: -6%;
+  left: -4%;
+}
+.slick-slide.slick-current {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.slick-dots {
+  bottom: -5rem;
 }

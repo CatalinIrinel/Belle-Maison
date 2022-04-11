@@ -1,27 +1,19 @@
 import React from 'react';
-import Video from '../../videos/heroBg.mp4';
+import Bg from '../../images/13.jpg';
 import {
   HeroBg,
   HeroContainer,
   HeroContent,
   HeroH1,
   HeroP,
-  VideoBg,
+  ImgBg,
 } from './HeroElements';
 
 function Hero() {
   return (
     <HeroContainer id="hero">
       <HeroBg>
-        <VideoBg
-          autoPlay={true}
-          loop={true}
-          controls={false}
-          playsInline
-          muted
-          src={Video}
-          type="video/mp4"
-        />
+        <ImgBg src={Bg} alt="Belle Maison Studio" />
       </HeroBg>
       <HeroContent>
         <HeroH1>Belle Maison Studio</HeroH1>

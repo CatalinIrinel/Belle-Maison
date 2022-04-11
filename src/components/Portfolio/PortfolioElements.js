@@ -2,7 +2,7 @@ import styled from 'styled-components/macro';
 
 const mainColor = '#000';
 // const goldGradient = 'linear-gradient(45deg,#f9f295,#e0AA3e,#f9f295,#b88a44)';
-const goldColor = '#ffe44d';
+// const goldColor = '#ffe44d';
 
 export const PortfolioContainer = styled.div`
   min-height: 100vh;
@@ -18,14 +18,19 @@ export const PortfolioContainer = styled.div`
   );
   overflow: hidden;
 
-  @media screen and (max-width: 768px) {
-    height: 80vh;
+  @media screen and (max-width: 1024.98px) {
+    min-height: 90vh;
+    padding-bottom: 10rem;
+    justify-content: flex-start;
+  }
+  @media screen and (max-width: 820.98px) {
+    min-height: 80vh;
     align-items: center;
     justify-content: flex-start;
   }
 
   @media screen and (max-width: 575.98px) {
-    height: auto;
+    min-height: 50vh;
     align-items: center;
     justify-content: flex-start;
   }
@@ -37,10 +42,12 @@ export const TitleContainer = styled.div`
   width: 100%;
   text-align: center;
   margin: 20px 0;
+  margin-bottom: 4rem;
   margin-top: 5%;
   @media screen and (max-width: 575.98px) {
     font-size: 1.8rem;
-    margin: 40px 0;
+    margin-top: 4rem;
+    margin-bottom: 0;
   }
 `;
 
@@ -79,52 +86,87 @@ export const MenuItem = styled.li`
 `;
 
 export const SliderWrapper = styled.div`
-  max-width: 1300px;
+  max-width: 1400px;
   width: 100%;
   height: auto;
   margin: auto;
   margin-bottom: 5%;
 
+  @media screen and (max-width: 1024.98px) {
+    margin: 2rem 0;
+    max-width: 850px;
+  }
+  @media screen and (max-width: 820.98px) {
+    max-width: 700px;
+  }
   @media screen and (max-width: 575.98px) {
     height: auto;
-    margin-bottom: 50px;
+    margin: 5rem 0;
+    margin-left: 25px;
   }
 `;
 export const SlideCard = styled.div`
+  margin: 0;
+  max-width: 1500px;
+  width: 100%;
   height: 700px;
+
+  @media screen and (max-width: 1024.98px) {
+    max-width: 800px;
+    height: 600px;
+  }
+
+  @media screen and (max-width: 820.98px) {
+    max-width: 680px;
+  }
   @media screen and (max-width: 575.98px) {
-    height: auto;
+    height: 300px;
+    width: 300px;
+  }
+
+  @media screen and (max-width: 390.98px) {
+    max-width: 290px;
   }
 `;
 export const ImageWrapper = styled.div`
-  width: 400px;
+  max-width: 1500px;
+  width: 100%;
   height: 100%;
+  margin: 0;
+  @media screen and (max-width: 1024.98px) {
+    max-width: 800px;
+  }
+
+  @media screen and (max-width: 820.98px) {
+    max-width: 700px;
+  }
+
   @media screen and (max-width: 575.98px) {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
+    height: 300px;
+  }
+  @media screen and (max-width: 391px) {
+    max-width: 315px;
+    width: 100%;
+    height: 300px;
   }
 `;
 
 export const SlideImage = styled.img`
-  object-fit: cover;
   width: 100%;
-  height: 600px;
+  height: 100%;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-
+  margin: 0;
   overflow: hidden;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 820.98px) {
     width: 100%;
   }
   @media screen and (max-width: 575.98px) {
     border-radius: 15px;
-    height: 500px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
-`;
-
-export const Arrows = styled.div`
-  max-width: 1500px;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 `;

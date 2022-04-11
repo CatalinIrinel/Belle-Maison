@@ -21,10 +21,14 @@ export const HeroContainer = styled.div`
     background: linear-gradient(
         180deg,
         rgba(0, 0, 0, 0.4) 0%,
-        rgba(0, 0, 0, 0.9) 100%
+        rgba(0, 0, 0, 0.5) 100%
       ),
       linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
     z-index: 2;
+  }
+
+  @media screen and (max-width: 575.98px) {
+    min-height: 400px;
   }
 `;
 
@@ -39,12 +43,11 @@ export const HeroBg = styled.div`
   overflow: hidden;
 `;
 
-export const VideoBg = styled.video`
+export const ImgBg = styled.img`
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  background: #232a34;
+  @media screen and (max-width: 575.98px) {
+    height: 100%;
+  }
 `;
 
 export const HeroContent = styled.div`

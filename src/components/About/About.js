@@ -42,16 +42,24 @@ function About({
               data-aos-delay={dataAosDelayTxt}
             >
               <TitleContainer>
-                <Title>Ce este Belle Maison Studio?</Title>
+                <Title>Ce este Belle Maison?</Title>
               </TitleContainer>
               <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                eget viverra sem. Nam non velit id elit scelerisque tincidunt.
-                Morbi ut tincidunt lectus, at fringilla orci. Aliquam non mauris
-                vitae tellus pellentesque fermentum. Morbi aliquam est sit amet
-                ligula viverra bibendum. Quisque vitae odio odio. Etiam mattis
-                feugiat dui eget semper. Nulla varius ullamcorper dui non
-                faucibus. Maecenas eget libero lacus.
+                La Belle Maison, suntem motivați de dorința de a ne servi căt
+                mai bine clienții de mai bine de 2 ani, împodobindu-le casele cu
+                stilul, rafinamentul, eleganța și căldura care surprind esența
+                celor care trăiesc în ele. <br />
+                <br />
+                Fiind o firmă formată dintr-o echipă cu experiență, înțelegem
+                valoarea stabilirii unor relații adevărate de durată cu clienții
+                noștri și îmbrățișăm oportunitățile pe care le avem pentru a le
+                crea casele de vis.
+                <br />
+                <br />
+                Serviciul pentru clienți este piatra de temelie a companiei
+                noastre, iar de la concept până la finalizare, echipa noastră de
+                proiectare vă va onora stilul și nevoile funcționale în timp ce
+                vă îndrumă prin proces și vă depășește fiecare așteptare.
               </Text>
             </TextContainer>
           </Column1>

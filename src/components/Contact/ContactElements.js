@@ -75,7 +75,7 @@ export const FormInput = styled.input`
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  color: white;
+  color: #000;
 `;
 
 export const FormTextArea = styled.textarea`
@@ -87,7 +87,7 @@ export const FormTextArea = styled.textarea`
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  color: white;
+  color: #000;
 `;
 export const FormButtonArea = styled.div`
   width: 100%;
