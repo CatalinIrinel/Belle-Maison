@@ -53,6 +53,7 @@ export const NavItem = styled.li`
 export const Copyrights = styled.li`
   display: ${({ toggle }) => (toggle ? 'flex' : 'none')};
   background: ${goldGradient};
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: 100%;
@@ -71,18 +72,19 @@ export const Copyrights = styled.li`
     overflow: hidden;
   }
 
-  p:nth-child(1) {
+  span {
+    width: 170px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  p:nth-child(1) > * {
+  span > * {
     margin-right: 5px;
   }
 
   img {
-    width: 50px;
+    width: 40px;
   }
 `;
 
@@ -91,6 +93,7 @@ export const Socialmedia = styled.li`
   height: 40px;
   font-size: 30px;
   background: ${goldGradient};
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: ${({ toggle }) => (toggle ? 'flex' : 'none')};
@@ -101,6 +104,11 @@ export const Socialmedia = styled.li`
     cursor: pointer;
     color: ${goldColor};
   }
+`;
+
+export const SocialLinks = styled.a`
+  cursor: pointer;
+  color: ${goldColor};
 `;
 
 export const NavLogo = styled(LinkS)`
@@ -148,11 +156,13 @@ export const NavText = styled.span`
   line-height: 60px;
   white-space: normal;
   background: ${goldGradient};
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   &.active {
     background: none;
+    background-clip: text;
     -webkit-background-clip: none;
     -webkit-text-fill-color: initial;
     color: ${mainColor};

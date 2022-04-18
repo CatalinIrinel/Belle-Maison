@@ -127,6 +127,7 @@ export const ImageArea = styled.div`
   @media screen and (max-width: 575.98px) {
     display: flex;
     justify-content: center;
+    animation: none;
   }
 `;
 

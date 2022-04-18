@@ -17,7 +17,9 @@ export const PortfolioContainer = styled.div`
     rgba(221, 196, 188, 0.8)
   );
   overflow: hidden;
-
+  @media screen and (min-width: 1920.98px) {
+    min-height: 80vh;
+  }
   @media screen and (max-width: 1024.98px) {
     min-height: 90vh;
     padding-bottom: 10rem;
@@ -30,7 +32,8 @@ export const PortfolioContainer = styled.div`
   }
 
   @media screen and (max-width: 575.98px) {
-    min-height: 50vh;
+    min-height: fit-content;
+    padding-bottom: 3rem;
     align-items: center;
     justify-content: flex-start;
   }
@@ -42,8 +45,8 @@ export const TitleContainer = styled.div`
   width: 100%;
   text-align: center;
   margin: 20px 0;
-  margin-bottom: 4rem;
-  margin-top: 5%;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
   @media screen and (max-width: 575.98px) {
     font-size: 1.8rem;
     margin-top: 4rem;
@@ -86,11 +89,18 @@ export const MenuItem = styled.li`
 `;
 
 export const SliderWrapper = styled.div`
-  max-width: 1400px;
-  width: 100%;
-  height: auto;
-  margin: auto;
-  margin-bottom: 5%;
+  @media screen and (min-width: 2000px) {
+    max-width: 3000px;
+    width: 100%;
+    height: 1200px;
+    margin: 3rem 5rem;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1500px;
+    width: 100%;
+    height: 750px;
+    margin: 3rem 5rem;
+  }
 
   @media screen and (max-width: 1024.98px) {
     margin: 2rem 0;
@@ -101,13 +111,14 @@ export const SliderWrapper = styled.div`
   }
   @media screen and (max-width: 575.98px) {
     height: auto;
+    width: 350px;
     margin: 5rem 0;
     margin-left: 25px;
   }
 `;
 export const SlideCard = styled.div`
   margin: 0;
-  max-width: 1500px;
+  max-width: 1000px;
   width: 100%;
   height: 700px;
 
@@ -129,7 +140,7 @@ export const SlideCard = styled.div`
   }
 `;
 export const ImageWrapper = styled.div`
-  max-width: 1500px;
+  max-width: 1000px;
   width: 100%;
   height: 100%;
   margin: 0;

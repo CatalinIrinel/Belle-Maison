@@ -22,6 +22,12 @@ function Portfolio() {
     dots: true,
     infinite: true,
     arrows: true,
+    autoplay: false,
+    speed: 2000,
+    autoplaySpeed: 5000,
+    className: 'center',
+    centerMode: true,
+    centerPadding: '120px',
     responsive: [
       {
         breakpoint: 1024,

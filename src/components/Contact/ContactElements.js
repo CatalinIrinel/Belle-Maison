@@ -7,15 +7,17 @@ const goldColor = '#ffe44d';
 export const ContactContainer = styled.div`
   width: 100%;
   padding: 5% 10%;
-  background: linear-gradient(
-    130deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(221, 196, 188, 0.8)
-  );
+  background: ${mainColor};
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 575.98px) {
+    height: 100vh;
+    padding: 8% 10%;
+    justify-content: space-evenly;
+  }
 `;
 
 export const ContactTitle = styled.div`
@@ -26,7 +28,7 @@ export const ContactTitle = styled.div`
 
 export const Title = styled.h1`
   font-size: 4rem;
-  color: ${mainColor};
+  color: #fff;
   @media screen and (max-width: 576.98px) {
     font-size: 2.8rem;
     line-height: 4.5rem;
@@ -62,7 +64,10 @@ export const FormLabel = styled.label`
   font-size: 20px;
   text-transform: uppercase;
   text-align: right;
-  color: #000;
+  background: ${goldGradient};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.3px #000;
   margin-top: 20px;
 `;
 
@@ -70,24 +75,24 @@ export const FormInput = styled.input`
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */
   border: none;
-  border-bottom: 3px solid #000; /* Gray border */
+  border-bottom: 3px solid #fff; /* Gray border */
   background: transparent;
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  color: #000;
+  color: #fff;
 `;
 
 export const FormTextArea = styled.textarea`
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */
   border: none;
-  border-bottom: 3px solid #000; /* Gray border */
+  border-bottom: 3px solid #fff; /* Gray border */
   background: transparent;
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  color: #000;
+  color: #fff;
 `;
 export const FormButtonArea = styled.div`
   width: 100%;
@@ -103,21 +108,23 @@ export const FromButton = styled.button`
   font-weight: bold;
   letter-spacing: 2px;
   padding: 20px 40px;
-  border: 3px solid ${mainColor};
-  color: ${goldColor};
+  border: 3px solid #fff;
+  background: ${goldGradient};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.3px #000;
   border-radius: 10px;
   text-transform: uppercase;
   transition: all 0.6s ease-out;
   background-color: ${mainColor};
 
   &:hover {
-    border: 3px solid ${mainColor};
+    border: 3px solid ${goldColor};
     background-color: transparent;
-    color: ${mainColor};
   }
 
   @media screen and (max-width: 576.98px) {
-    width: 50%;
+    width: fit-content;
     padding: 10px 25px;
 
     font-size: 2rem;

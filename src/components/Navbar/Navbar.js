@@ -16,6 +16,7 @@ import {
   NavItems,
   NavLink,
   NavText,
+  SocialLinks,
   Socialmedia,
   TimesIcon,
   Toggler,
@@ -90,16 +91,20 @@ function Navbar() {
         </NavItems>
         <NavItems className="footer">
           <Copyrights toggle={toggle}>
-            <p>
+            <span>
               <img src={logoIcon} alt="Lighthouse Design Studio" />
               <FaIcons.FaRegCopyright className="copyrights" />{' '}
               {new Date().getFullYear()}
-            </p>
+            </span>
             <br /> <p>All rights reserved</p>
           </Copyrights>
           <Socialmedia toggle={toggle}>
-            <FaIcons.FaFacebook className="icon" />
-            <FaIcons.FaInstagram className="icon" />
+            <SocialLinks href="https://www.facebook.com/Bellemaisonstudio-110924024733352">
+              <FaIcons.FaFacebook className="icon" />
+            </SocialLinks>
+            <SocialLinks href="https://www.instagram.com/belle.maisonstudio/">
+              <FaIcons.FaInstagram className="icon" />
+            </SocialLinks>
           </Socialmedia>
         </NavItems>
       </Nav>

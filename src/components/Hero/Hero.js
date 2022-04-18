@@ -1,12 +1,14 @@
 import React from 'react';
 import Bg from '../../images/13.jpg';
+import logo from '../../images/LogoBelle.png';
 import {
   HeroBg,
   HeroContainer,
   HeroContent,
-  HeroH1,
   HeroP,
   ImgBg,
+  LogoImg,
+  LogoWrapper,
 } from './HeroElements';
 
 function Hero() {
@@ -16,10 +18,14 @@ function Hero() {
         <ImgBg src={Bg} alt="Belle Maison Studio" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Belle Maison Studio</HeroH1>
+        <LogoWrapper>
+          <LogoImg className="logoHero" src={logo} alt="Belle maison studio" />
+        </LogoWrapper>
         <HeroP>
-          Comfortul tau este important pentru viata de zi cu zi. Noi putem da
-          viata ideilor voastre !
+          <i>
+            Comfortul tau este important pentru viata de zi cu zi. Noi putem da
+            viata ideilor voastre !
+          </i>
         </HeroP>
       </HeroContent>
     </HeroContainer>

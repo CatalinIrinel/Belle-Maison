@@ -42,7 +42,27 @@ export const HeroBg = styled.div`
   height: 100%;
   overflow: hidden;
 `;
+export const LogoWrapper = styled.div`
+  width: 80%;
+  animation: levitation 5s infinite ease-in-out;
 
+  @keyframes levitation {
+    0% {
+      transform: translatey(10px);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+
+    100% {
+      transform: translatey(10px);
+    }
+  }
+`;
+
+export const LogoImg = styled.img`
+  width: 100%;
+`;
 export const ImgBg = styled.img`
   width: 100%;
   @media screen and (max-width: 575.98px) {
