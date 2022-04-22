@@ -20,8 +20,41 @@ export const Nav = styled.nav`
   display: ${({ toggle }) => (toggle ? 'flex' : '')};
   flex-direction: ${({ toggle }) => (toggle ? 'column' : '')};
   justify-content: ${({ toggle }) => (toggle ? 'space-between' : '')};
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+  }
 `;
 
+export const MobileLogoWrap = styled.div`
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+    width: 200px;
+  }
+`;
+
+export const MobileLogo = styled.img`
+  width: 100%;
+`;
+export const MobileIcon = styled.div`
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 3rem;
+    cursor: pointer;
+    color: #fff;
+  }
+`;
 export const NavItems = styled.ul`
   top: 0;
   left: 0;
@@ -35,6 +68,9 @@ export const NavItems = styled.ul`
 
   &.footer > * {
     margin-bottom: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -174,6 +210,10 @@ export const TogglerWrapper = styled.li`
   list-style: none;
   width: 100%;
   margin-left: 10px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 export const Toggler = styled.div`
   width: 50px;

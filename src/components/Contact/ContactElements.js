@@ -30,13 +30,14 @@ export const Title = styled.h1`
   font-size: 4rem;
   color: #fff;
   @media screen and (max-width: 576.98px) {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     line-height: 4.5rem;
   }
 `;
 
 export const TitleColor = styled.span`
   background: ${goldGradient};
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0.3px #000;
@@ -65,6 +66,7 @@ export const FormLabel = styled.label`
   text-transform: uppercase;
   text-align: right;
   background: ${goldGradient};
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0.3px #000;
@@ -109,10 +111,7 @@ export const FromButton = styled.button`
   letter-spacing: 2px;
   padding: 20px 40px;
   border: 3px solid #fff;
-  background: ${goldGradient};
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0.3px #000;
+  color: #fff;
   border-radius: 10px;
   text-transform: uppercase;
   transition: all 0.6s ease-out;
@@ -125,8 +124,7 @@ export const FromButton = styled.button`
 
   @media screen and (max-width: 576.98px) {
     width: fit-content;
-    padding: 10px 25px;
-
+    padding: 10px 15px;
     font-size: 2rem;
   }
 `;

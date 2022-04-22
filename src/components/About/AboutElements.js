@@ -56,7 +56,7 @@ export const AboutRow = styled.div`
 `;
 
 export const Column1 = styled.div`
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   padding: 0 15px;
   grid-area: col1;
   @media screen and (max-width: 575.98px) {
@@ -81,10 +81,11 @@ export const Title = styled.h1`
   width: 100%;
   font-size: 4rem;
   background: ${goldGradient};
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   @media screen and (max-width: 575.98px) {
-    font-size: 3rem;
+    font-size: 2.8rem;
     padding-top: 25px;
     text-align: center;
   }

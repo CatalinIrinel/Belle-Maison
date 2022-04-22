@@ -107,7 +107,9 @@ export const SliderWrapper = styled.div`
     max-width: 850px;
   }
   @media screen and (max-width: 820.98px) {
-    max-width: 700px;
+    max-width: 680px;
+    width: 100%;
+    margin: 2rem 3rem;
   }
   @media screen and (max-width: 575.98px) {
     height: auto;

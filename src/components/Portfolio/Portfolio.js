@@ -40,6 +40,9 @@ function Portfolio() {
       {
         breakpoint: 820.98,
         settings: {
+          className: 'center',
+          centerMode: true,
+          centerPadding: '8px',
           arrows: false,
         },
       },
@@ -78,7 +81,7 @@ function Portfolio() {
               return (
                 <SlideCard key={index}>
                   <ImageWrapper>
-                    <SlideImage src={img.src} alt={img.alt} />
+                    <SlideImage loading="lazy" src={img.src} alt={img.alt} />
                   </ImageWrapper>
                 </SlideCard>
               );

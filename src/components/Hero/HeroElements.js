@@ -26,9 +26,12 @@ export const HeroContainer = styled.div`
       linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
     z-index: 2;
   }
-
+  @media screen and (max-width: 768.98px) {
+    min-height: 600px;
+  }
   @media screen and (max-width: 575.98px) {
-    min-height: 400px;
+    padding: 3rem 0;
+    min-height: 80vh;
   }
 `;
 
@@ -58,14 +61,27 @@ export const LogoWrapper = styled.div`
       transform: translatey(10px);
     }
   }
+  @media screen and (max-width: 768.98px) {
+    height: 300px;
+  }
+  @media screen and (max-width: 575.98px) {
+    width: 300px;
+    height: auto;
+  }
 `;
 
 export const LogoImg = styled.img`
   width: 100%;
+  @media screen and (max-width: 768.98px) {
+    height: 100%;
+  }
+  @media screen and (max-width: 575.98px) {
+    width: 100%;
+  }
 `;
 export const ImgBg = styled.img`
   width: 100%;
-  @media screen and (max-width: 575.98px) {
+  @media screen and (max-width: 768.98px) {
     height: 100%;
   }
 `;
@@ -82,6 +98,7 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
   background: ${goldGradient};
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 48px;

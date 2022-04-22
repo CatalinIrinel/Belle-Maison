@@ -10,6 +10,9 @@ import {
   BorderOne,
   BorderTwo,
   Copyrights,
+  MobileIcon,
+  MobileLogo,
+  MobileLogoWrap,
   Nav,
   NavIcon,
   NavItem,
@@ -24,7 +27,7 @@ import {
 } from './NavbarElements';
 import { SidebarData } from './SidebarData';
 
-function Navbar() {
+function Navbar({ mobileToggle }) {
   const [toggle, setToggle] = useState(false);
   const [getActive, setGetActive] = useState([]);
   const menuToggle = () => {
@@ -47,6 +50,15 @@ function Navbar() {
   return (
     <>
       <Nav toggle={toggle}>
+        <MobileLogoWrap>
+          <MobileLogo
+            src="/images/LogoBelleWide.png"
+            alt="Belle Maison Design Studio"
+          />
+        </MobileLogoWrap>
+        <MobileIcon onClick={mobileToggle}>
+          <FaIcons.FaBars />
+        </MobileIcon>
         <NavItems toggle={toggle}>
           <TogglerWrapper>
             <Toggler toggle={toggle} onClick={menuToggle}>
